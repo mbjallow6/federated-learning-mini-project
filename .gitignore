@@ -26,5 +26,5 @@ Thumbs.db
 *.rda
 *.rds
 *.parquet
-!datashield_vignette/data/sample_omop_data.rda  
+!datashield_vignette/data/sample_omop_data.rda
 secrets/
