@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "federated-learning-mini"
+version = "0.1.0"
+description = "Reference architecture for privacy-preserving data visiting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "sqlalchemy>=2.0",
+    "pydantic>=2.5",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pre-commit",
+    "pytest",
+    "pytest-cov",
+]

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Data & secrets
+*.csv
+*.rda
+*.rds
+*.parquet
+!datashield_vignette/data/sample_omop_data.rda
+secrets/
