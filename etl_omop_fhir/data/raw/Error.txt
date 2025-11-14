@@ -1,0 +1,185 @@
+*** Generic error information ***
+Message: Cannot invoke "java.io.BufferedReader.readLine()" because "<parameter1>.bufferedReader" is null
+Time: Nov 14, 2025, 12:52:24 AM
+Processor type: null
+Available processors: 24
+Maximum available memory: 1,258,291,200 bytes
+Used memory: 50,887,032 bytes
+Java version: 21.0.8
+Java vendor: Ubuntu
+OS architecture: amd64
+OS name: Linux
+OS version: 6.8.0-87-generic
+OS patch level: null
+
+*** Stack trace ***
+org.ohdsi.utilities.files.ReadTextFile$TextFileIterator.<init>(ReadTextFile.java:93)
+org.ohdsi.utilities.files.ReadTextFile.iterator(ReadTextFile.java:131)
+org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFile(SourceDataScan.java:550)
+org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFiles(SourceDataScan.java:256)
+org.ohdsi.whiterabbit.scan.SourceDataScan.process(SourceDataScan.java:151)
+org.ohdsi.whiterabbit.WhiteRabbitMain$ScanRunner.run(WhiteRabbitMain.java:1028)
+org.ohdsi.whiterabbit.WhiteRabbitMain.scanRun(WhiteRabbitMain.java:990)
+org.ohdsi.whiterabbit.WhiteRabbitMain.access$300(WhiteRabbitMain.java:62)
+org.ohdsi.whiterabbit.WhiteRabbitMain$4.actionPerformed(WhiteRabbitMain.java:412)
+java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+java.desktop/java.awt.Component.processEvent(Component.java:6386)
+java.desktop/java.awt.Container.processEvent(Container.java:2266)
+java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+*** Console ***
+Nov 14, 2025, 12:41:42￢ﾀﾯAM	Started new scan of 1 tables...
+Nov 14, 2025, 12:41:42￢ﾀﾯAM	Scanning table /home/luka/whiterabbit_work/ScanReport.xlsx
+Nov 14, 2025, 12:41:42￢ﾀﾯAM	Generating scan report
+Nov 14, 2025, 12:41:43￢ﾀﾯAM	Scan report generated: /home/luka/whiterabbit_work/ScanReport.xlsx
+Nov 14, 2025, 12:44:37￢ﾀﾯAM	Started new scan of 1 tables...
+Nov 14, 2025, 12:44:37￢ﾀﾯAM	Scanning table /home/luka/whiterabbit_work/ScanReport.xlsx
+Nov 14, 2025, 12:44:37￢ﾀﾯAM	Generating scan report
+Nov 14, 2025, 12:44:37￢ﾀﾯAM	Scan report generated: /home/luka/whiterabbit_work/ScanReport.xlsx
+Nov 14, 2025, 12:46:00￢ﾀﾯAM	Starting creation of fake data
+[AWT-EventQueue-0] INFO org.ohdsi.whiterabbit.fakeDataGenerator.FakeDataGenerator - Loading scan report from /home/luka/whiterabbit_work/ScanReport.xlsx
+[AWT-EventQueue-0] INFO org.ohdsi.whiterabbit.fakeDataGenerator.FakeDataGenerator - Generating table /home/luka/whiterabbit_work/scanreport.xlsx.csv
+Nov 14, 2025, 12:46:00￢ﾀﾯAM	Done
+Nov 14, 2025, 12:52:24￢ﾀﾯAM	Started new scan of 1 tables...
+Nov 14, 2025, 12:52:24￢ﾀﾯAM	Scanning table /home/luka/Documents/dev/federated-learning/federated-learning-mini-project/etl_omop_fhir/data/raw/ScanReport.xlsx
+java.io.FileNotFoundException: /home/luka/Documents/dev/federated-learning/federated-learning-mini-project/etl_omop_fhir/data/raw/ScanReport.xlsx (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at org.ohdsi.utilities.files.ReadTextFile.<init>(ReadTextFile.java:51)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFile(SourceDataScan.java:550)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFiles(SourceDataScan.java:256)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.process(SourceDataScan.java:151)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain$ScanRunner.run(WhiteRabbitMain.java:1028)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain.scanRun(WhiteRabbitMain.java:990)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain.access$300(WhiteRabbitMain.java:62)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain$4.actionPerformed(WhiteRabbitMain.java:412)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[AWT-EventQueue-0] ERROR org.ohdsi.whiterabbit.WhiteRabbitMain - Cannot invoke "java.io.BufferedReader.readLine()" because "<parameter1>.bufferedReader" is null
+java.lang.NullPointerException: Cannot invoke "java.io.BufferedReader.readLine()" because "<parameter1>.bufferedReader" is null
+	at org.ohdsi.utilities.files.ReadTextFile$TextFileIterator.<init>(ReadTextFile.java:93)
+	at org.ohdsi.utilities.files.ReadTextFile.iterator(ReadTextFile.java:131)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFile(SourceDataScan.java:550)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.processCsvFiles(SourceDataScan.java:256)
+	at org.ohdsi.whiterabbit.scan.SourceDataScan.process(SourceDataScan.java:151)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain$ScanRunner.run(WhiteRabbitMain.java:1028)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain.scanRun(WhiteRabbitMain.java:990)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain.access$300(WhiteRabbitMain.java:62)
+	at org.ohdsi.whiterabbit.WhiteRabbitMain$4.actionPerformed(WhiteRabbitMain.java:412)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+*** Working folder contents ***
+Directory of /home/luka/Documents/dev/federated-learning/federated-learning-mini-project/etl_omop_fhir/data/raw
+
+patients.csv                                                                 500                   13-11-2025 11:19:57
+conditions.csv                                                             3,907                   13-11-2025 11:19:57
+medications.csv                                                            1,532                   13-11-2025 11:19:57
+SYNTHEA_README.yml                                                            34                   13-11-2025 11:32:38
+timestamp.txt                                                                 21                   13-11-2025 11:32:38
+Error.txt                                                                  8,192                   14-11-2025 12:52:24
+
+Available disc space: 854,259,724,288 bytes
