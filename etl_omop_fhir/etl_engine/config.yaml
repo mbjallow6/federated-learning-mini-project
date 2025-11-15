@@ -1,0 +1,35 @@
+etl:
+  name: "Synthea-to-OMOP-Mini-Project"
+  version: "1.0.0"
+  cdm_version: "5.4"
+  batch_size: 1000
+
+schemas:
+  cdm: "public"
+  vocab: "public"
+  staging: "staging"
+
+# Concept mappings (simplified for mini-project)
+# In production, query CONCEPT table
+mappings:
+  gender:
+    F: 8532
+    M: 8507
+    female: 8532
+    male: 8507
+
+  race:
+    white: 8527
+    black: 8516
+    asian: 8515
+    other: 8522
+
+  ethnicity:
+    hispanic: 38003563
+    nonhispanic: 38003564
+
+# OMOP type concepts
+type_concepts:
+  condition_type: 32020      # EHR
+  drug_type: 38000177        # Prescription written
+  measurement_type: 44818701 # From physical examination
