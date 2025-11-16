@@ -1,0 +1,57 @@
+# version: '3.8'
+
+services:
+  # PostgreSQL for Opal metadata
+  opal_db:
+    image: postgres:15-alpine
+    container_name: opal_db
+    environment:
+      POSTGRES_DB: opal
+      POSTGRES_USER: opal
+      POSTGRES_PASSWORD: opal123
+    volumes:
+      - opal_db_data:/var/lib/postgresql/data
+    networks:
+      - ds_net
+
+  # Opal server (Data Access Gateway)
+  opal:
+    image: obiba/opal:4.4
+    container_name: opal
+    ports:
+      - "8843:8843"
+      - "8080:8080"
+    environment:
+      OPAL_ADMINISTRATOR_PASSWORD: SecurePass123
+    depends_on:
+      - opal_db
+    volumes:
+      - opal_data:/var/opal
+    networks:
+      - ds_net
+
+  # Rock server node 1
+  rock_1:
+    image: datashield/rock-base:6.1
+    container_name: rock_1
+    environment:
+      ROCK_PORT: 8000
+    networks:
+      - ds_net
+
+  # Rock server node 2
+  rock_2:
+    image: datashield/rock-base:6.1
+    container_name: rock_2
+    environment:
+      ROCK_PORT: 8000
+    networks:
+      - ds_net
+
+volumes:
+  opal_data:
+  opal_db_data:
+
+networks:
+  ds_net:
+    driver: bridge
