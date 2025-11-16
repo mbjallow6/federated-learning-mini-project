@@ -6,7 +6,11 @@ Based on OHDSI ETL-Synthea reference implementation
 import pandas as pd
 import logging
 from pathlib import Path
-from .base_etl import OMOPETLBase
+
+try:
+    from .base_etl import OMOPETLBase
+except ImportError:
+    from base_etl import OMOPETLBase
 
 logger = logging.getLogger(__name__)
 
